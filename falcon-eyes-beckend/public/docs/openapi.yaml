@@ -1,0 +1,47 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /api/user:
+    get:
+      summary: ''
+      operationId: getApiUser
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 4
+                  name: 'Jessica Jones'
+                  roles:
+                    - admin
+                properties:
+                  id:
+                    type: integer
+                    example: 4
+                  name:
+                    type: string
+                    example: 'Jessica Jones'
+                  roles:
+                    type: array
+                    example:
+                      - admin
+                    items:
+                      type: string
+      tags:
+        - Endpoints
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''
